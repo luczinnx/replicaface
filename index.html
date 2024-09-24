@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook - Entrar</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon">
+</head>
+<body>
+
+    <main>
+        <div id="pt-esq">
+            <h1>facebook</h1>
+            <p id="login">Logins Recentes</p>
+            <p style="color: #333333;">Clique na sua foto ou adicione uma conta.</p>
+            <div class="perfis">
+                <div id="perfil">
+                    <img src="imagens/foto.jpg" alt="Foto-Perfil">
+                    <label for="img">Lucas</label>
+                </div>
+                <div id="perfil" onclick="criaConta()">
+                    <img src="imagens/mais.png" id="mais" alt="Foto-Perfil">
+                    <label for="img" id="nome">Adicionar Conta</label>
+                </div>
+            </div>
+        </div>
+
+        <div id="pt-dir">
+            <form>
+                <input type="email" name="email" id="email" placeholder="Email ou Telefone" required>
+                <br>
+                <br>
+                <input type="password" name="senha" id="senha" placeholder="Senha" required>
+                <br>
+                <button id="entrar" onclick="login()"><a href="#">Entrar</a></button>
+                <p><a href="#">Esqueceu a Senha?</a></p>
+                <hr>
+                <button id="criar" onclick="criaConta()" type="submit"><a href="#">Criar nova conta</a></button>
+            </form>
+
+            <p id="p"><strong>Crie uma Página</strong> para uma celebridade, uma marca ou uma <br>empresa.</p>
+        </div>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+
+<script>
+    let email, senha, nome, sobrenome;
+    function criaConta() {
+        email     = prompt("Digite seu email: ");
+        senha     = prompt("Digite sua senha: ");
+        nome      = prompt("Digite seu nome: ");
+        sobrenome = prompt("Digite seu sobrenome: ");
+        alert("Conta criada com sucesso!");
+    }
+
+    function login() {
+        alert(`Olá, ${nome} ${sobrenome}!`);
+    }
+</script>
+</html>

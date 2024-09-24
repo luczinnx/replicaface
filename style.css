@@ -1,0 +1,157 @@
+@charset "UTF-8";
+
+/* You can start writing here. */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #F2F4F7;
+}
+
+main {
+    margin: 10%;
+    display: flex;
+    justify-content: space-around;
+    gap: 10em;
+}
+
+#pt-esq h1 {
+    color: #1313ff;
+    font-size: 2.5em;
+}
+
+#login {
+    font-size: 2.5em;
+    color: #333333;
+}
+
+#nome {
+    font-size: .1em;
+    color: #1313ff;
+}
+
+.perfis {
+    gap: 1em;
+    display: flex;
+}
+
+#perfil {
+    display: flex;
+    flex-direction: column;
+    width: 10.54em;
+    padding-top: 2em;
+}
+
+#perfil:hover {
+    cursor: pointer;
+}
+
+#perfil img {
+    width: 10.5em;
+    border-radius: 1em 1em 0 0;
+    transition: 250ms;
+}
+
+#perfil:hover img {
+    box-shadow: 0 0 10px 0 #0000003d;
+}
+
+#mais {
+    padding: 3.5em;
+}
+
+#perfil label {
+    background-color: #f5f5f5;
+    font-size: 1.1em;
+    padding: .5em;
+    border-radius: 0 0 1em 1em;
+    text-align: center;
+    box-shadow: 0 0 10px 0 #0000003d;  
+}
+
+#pt-dir form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: .5em;
+    padding: 1em;
+    box-shadow: 0 0 10px 0 #0000003d;
+    width: 25em;
+}
+
+#pt-dir form input {
+    padding: 1.4em;
+    border-radius: .5em;
+    border: 1px solid #d1d1d1;
+    width: 100%;
+    text-align: left;
+}
+
+#pt-dir form p a {
+    text-align: center;
+    color: #3939ff;
+    font-size: .8em;
+    padding: .5em;
+    text-decoration: none;
+}
+
+#pt-dir form p a:hover {
+    text-decoration: underline;
+}
+
+#entrar {
+    background-color: #0866FF;
+    padding: 1em;
+    border: none;
+    border-radius: 0.5em;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    transition: 250ms;
+    margin: 5% 0 5% 0;
+}
+
+#entrar:hover {
+    background-color: #3939ff;
+}
+
+#entrar a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+#criar {
+    background-color: #42B72A;
+    padding: .75em;
+    border: none;
+    border-radius: 0.5em;
+    cursor: pointer;
+    width: 65%;
+    margin-top: 1em;
+    text-align: center;
+    transition: 250ms;
+}
+
+#criar:hover {
+    background-color: #00b009;
+}
+
+#criar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.35em;
+}
+
+#p {
+    text-align: center;
+    font-size: .85em;
+    padding: 1.5em;
+}
